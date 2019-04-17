@@ -2,7 +2,7 @@
 
 [Logstash](https://github.com/elastic/logstash) is an open source, server-side data processing pipeline. It has a pluggable framework featuring over 200 plugins. The self-defined [logstash-input-pravega](https://github.com/pravega/logstash-input-pravega) and  [logstash-output-pravega](https://github.com/pravega/logstash-output-pravega) will be used with logstash filter plugins to transform unstructured log to json.
 The input plugin reads stream from pravega. Then the filter plugin transforms the unstructed log to json with self-defined rules. The filter plugin only process the logs which matches the rules. Otherwise, it will be skipped. Finally, the json data will be writen to pravage by the writer plugin. Here is the process pipeline.
-![pipeline](pic/pipeline.png).
+![pipeline](img/pipeline.png).
 
 Currently, the configed filter plugin can support for the apachelog/syslog/nginx/mysql query and error log, custom application log.
 
